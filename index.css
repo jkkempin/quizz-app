@@ -1,16 +1,15 @@
 * {
     box-sizing: border-box;
+    background-color: darkolivegreen;
   }
 
 .container {
     width: 400px;
-    height: 300px;
+    height: 500px;
     border-style: solid;
     margin: auto;
     text-align: center; 
     
-
-
 }
 
 h1 {
@@ -29,4 +28,9 @@ h2 {
     margin-right: 10px;
     text-align: left;
 
+}
+
+img {
+    border-style: solid;
+    
 }

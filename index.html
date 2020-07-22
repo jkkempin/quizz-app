@@ -4,83 +4,99 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dino Fossils Quiz</title>
+    <meta name="description" type= "A quiz app about Dinosuar Fossils">
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <div class= "container">
+    <div class= "container" id= opening-page>
     <h1>Test Your Dinosaur Fossil Knowledge</h1>
+    <img src="images/T-Rex.jpeg" alt="T-Rex Bones">
     <div>
         <button type= "submit"> Sart</button>
     </div>
     </div>
 
-    <div class= "container">
+    <div class= "container" id= question-one>
         <h1>Test Your Dinosaur Fossil Knowledge</h1>
+        <img src="images/world.jpeg" alt="Map of the World">
         <form class= "quiz-answer-form">
-            <h2>Question 1</h2>
-            <input type="radio" id= "q1-choiceA" value= "q1-choiceA">
-            <label for="q1-choiceA">Text for choice a</label><br>
-            <input type="radio" id= "q1-choiceB" value= "q1-choiceB">
-            <label for="q1-choiceB">Text for choice B</label><br>
-            <input type="radio" id= "q1-choiceC" value= "q1-choiceC">
-            <label for="q1-choiceC">Text for choice C</label><br>
+            <h2>Where have diosaur fossils been found?</h2>
+            <input type="radio" id= "q1-choiceA" name= number-one value= "q1-choiceA">
+            <label for="q1-choiceA">in North America, South America, Asia, and Europe</label><br>
+            <input type="radio" id= "q1-choiceB" name= number-one value= "q1-choiceB">
+            <label for="q1-choiceB">on all 7 contients</label><br>
+            <input type="radio" id= "q1-choiceC" name= number-one value= "q1-choiceC">
+            <label for="q1-choiceC">in countries around the equator</label><br>
         </form>
     </div>
     
-    <div class= "container">
+    <div class= "container" id= question-two>
         <h1>Test Your Dinosaur Fossil Knowledge</h1>
+        <img src="images/palientologist.jpeg" alt="Paleontologists dusting for dinosuar fossils">
+        
         <form class= "quiz-answer-form">
-            <h2>Question 2</h2>
-            <input type="radio" id= "q2-choiceA" value= "q2-choiceA">
-            <label for="q2-choiceA">Text for choice a</label><br>
-            <input type="radio" id= "q2-choiceB" value= "q2-choiceB">
-            <label for="q2-choiceB">Text for choice B</label><br>
-            <input type="radio" id= "q2-choiceC" value= "q2-choiceC">
-            <label for="q2-choiceC">Text for choice C</label><br>
+            <h2>What kind of scientist studies dinosaur fossils?</h2>
+            <input type="radio" id= "q2-choiceA" name= number-two value= "q2-choiceA">
+            <label for="q2-choiceA">Biologists</label><br>
+            <input type="radio" id= "q2-choiceB" name= number-two value= "q2-choiceB">
+            <label for="q2-choiceB">Paleontologists</label><br>
+            <input type="radio" id= "q2-choiceC" name= number-two value= "q2-choiceC">
+            <label for="q2-choiceC">Entomologist</label><br>
         </form>
+
     </div>
 
     <div class= "container">
         <h1>Test Your Dinosaur Fossil Knowledge</h1>
-        <form class= "quiz-answer-form">
-            <h2>Question 3</h2>
-            <input type="radio" id= "q3-choiceA" value= "q3-choiceA">
-            <label for="q3-choiceA">Text for choice a</label><br>
-            <input type="radio" id= "q3-choiceB" value= "q3-choiceB">
-            <label for="q3-choiceB">Text for choice B</label><br>
-            <input type="radio" id= "q3-choiceC" value= "q3-choiceC">
-            <label for="q3-choiceC">Text for choice C</label><br>
+        <img src="images/largest.jpeg" alt="Argentinosaurous bones in a museum">
+       
+        <form class= "quiz-answer-form" id= question-three>
+            <h2>What is the largest dinosaur fossil ever found?</h2>
+            <input type="radio" id= "q3-choiceA" name= number-three value= "q3-choiceA">
+            <label for="q3-choiceA">Argentinosaurous</label><br>
+            <input type="radio" id= "q3-choiceB" name= number-three value= "q3-choiceB">
+            <label for="q3-choiceB">Saltasaurous</label><br>
+            <input type="radio" id= "q3-choiceC" name= number-three value= "q3-choiceC">
+            <label for="q3-choiceC">Tyrannosaurus</label><br>
         </form>
+
     </div>
 
     <div class= "container">
         <h1>Test Your Dinosaur Fossil Knowledge</h1>
-        <form class= "quiz-answer-form">
-            <h2>Question 4</h2>
-            <input type="radio" id= "q4-choiceA" value= "q4-choiceA">
-            <label for="q4-choiceA">Text for choice a</label><br>
-            <input type="radio" id= "q4-choiceB" value= "q4-choiceB">
-            <label for="q4-choiceB">Text for choice B</label><br>
-            <input type="radio" id= "q4-choiceC" value= "q4-choiceC">
-            <label for="q4-choiceC">Text for choice C</label><br>
+        <img src="images/oldest.jpeg" alt="Old fossil in rock">
+       
+        <form class= "quiz-answer-form" id= question-four>
+            <h2>What is the oldest known fossil?</h2>
+            <input type="radio" id= "q4-choiceA" name= number-four value= "q4-choiceA">
+            <label for="q4-choiceA">blue-green algae that lived 3.2 billion years ago</label><br>
+            <input type="radio" id= "q4-choiceB" name= number-four value= "q4-choiceB">
+            <label for="q4-choiceB">T-Rex that lived 68 million years ago
+            </label><br>
+            <input type="radio" id= "q4-choiceC" name= number-four value= "q4-choiceC">
+            <label for="q4-choiceC">dinosaur dung from 65 million years ago</label><br>
         </form>
+
     </div>
 
     <div class= "container">
         <h1>Test Your Dinosaur Fossil Knowledge</h1>
-        <form class= "quiz-answer-form">
-            <h2>Question 5</h2>
-            <input type="radio" id= "q5-choiceA" value= "q5-choiceA">
-            <label for="q5-choiceA">Text for choice a</label><br>
-            <input type="radio" id= "q5-choiceB" value= "q5-choiceB">
-            <label for="q5-choiceB">Text for choice B</label><br>
-            <input type="radio" id= "q5-choiceC" value= "q5-choiceC">
-            <label for="q5-choiceC">Text for choice C</label><br>
+        <img src="images/old photo.jpeg" alt="Old drawing of early animal fossils in museum">
+        <form class= "quiz-answer-form" id= question-five>
+            <h2>Where does the word fossil come from?</h2>
+            <input type="radio" id= "q5-choiceA" name= number-five value= "q5-choiceA">
+            <label for="q5-choiceA">Latin word meaning “preserved”</label><br>
+            <input type="radio" id= "q5-choiceB" name= number-five value= "q5-choiceB">
+            <label for="q5-choiceB">Greek word meaning “ancient”</label><br>
+            <input type="radio" id= "q5-choiceC" name= number-five value= "q5-choiceC">
+            <label for="q5-choiceC">Latin word meaning “dug up”</label><br>
         </form>
+
     </div>
 
     <div class= "container">
         <h1>Not Quite</h1>
+        <img src="images/wrong answer.jpeg" alt="Dinosuar teeth">
         <p>Information including the correct answer</p>
         <div>
             <button type= "submit">Next</button>
@@ -90,6 +106,7 @@
 
     <div class= "container">
         <h1>Great Job</h1>
+        <img src="images/right answer.jpeg" alt="Old dinosaur fossil">
         <p>Information including the correct answer</p>
         <div>
             <button type= "submit">Next</button>
