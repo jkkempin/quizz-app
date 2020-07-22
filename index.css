@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+  }
+
+.container {
+    width: 400px;
+    height: 300px;
+    border-style: solid;
+    margin: auto;
+    text-align: center; 
+    
+
+
+}
+
+h1 {
+    font-size: 25px;
+    height: 75px;
+    padding: 10px;
+}
+
+h2 {
+    font-size: 20px;
+    padding: 0px;
+}
+
+.quiz-answer-form {
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: left;
+
+}
