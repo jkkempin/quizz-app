@@ -104,14 +104,14 @@ let score = 0;
       let correctAnswerText = questions[currentQuestion][correctAnswerNumber]
     return `
     <form class="answer-page">
-    <h1>Not Quite</h1>
-    <img src="images/wrong-answer.jpeg" alt="T-Rex teeth close up">
-    <h2>The correct answer is:</h2>
-    <div>${correctAnswerText}</div>
-    <div>
-        <button type= "submit">Next</button>
-    </div>
-  </form>
+        <h1>Not Quite</h1>
+        <img src="images/wrong-answer.jpeg" alt="T-Rex teeth close up">
+        <h2>The correct answer is:</h2>
+        <div class= "answer">${correctAnswerText}</div>
+        <div>
+            <button type= "submit">Next</button>
+        </div>
+    </form>
     `
 
   };
@@ -134,12 +134,14 @@ let score = 0;
      
       let selectedAnswer = $( '.option:checked' ).val();
 
-      if (selectedAnswer === questions[currentQuestion].correct) {
-        $( '.container' ).html( correctAnswerPage );
-        score++;
-      }
-      else {
-        $( '.container' ).html( wrongAnswerPage );
+        if ( selectedAnswer === undefined) {
+           $( alert("Select an answer"));
+          
+        } else if (selectedAnswer === questions[currentQuestion].correct) {
+            $( '.container' ).html( correctAnswerPage );
+            score++;
+        } else {
+            $( '.container' ).html( wrongAnswerPage );
      }
     currentQuestion++;
     });
