@@ -32,5 +32,22 @@ h2 {
 
 img {
     border-style: solid;
+    width: 250px;
+    margin: 10px;
     
+
+    
+}
+
+button {
+    margin: 10px;
+
+}
+
+.button {
+    text-align: center;
+}
+
+.question-number {
+    text-align: center;
 }
