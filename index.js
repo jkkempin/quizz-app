@@ -71,6 +71,7 @@ let score = 0;
           </div>
 
           <p class= 'question-number'>Question ${questionNumber} out of 5</p>
+          <p class= 'score'>Current Score ${score} out of 5</p>
       </form>
     `
   }

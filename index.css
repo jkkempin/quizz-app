@@ -56,4 +56,10 @@ button {
 
 .question-number {
     text-align: center;
+    font-size: small;
+}
+
+.score  {
+    text-align: center;
+    font-size: small;
 }
