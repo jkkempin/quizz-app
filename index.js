@@ -1,6 +1,6 @@
 let questions = [{
     question: "Where have diosaur fossils been found?",
-    image: "images/world.jpeg",
+    image: "./images/world.jpeg",
     choice1 : "in North America, South America, Asia, and Europe",
     choice2 : "all continents except Antarctica",
     choice3 : "on all 7 continents",
@@ -9,7 +9,7 @@ let questions = [{
   },
   {
     question: "What kind of scientist studies dinosaur fossils?",
-    image: "images/palientologist.jpeg",
+    image: "./images/palientologist.jpeg",
     choice1 : "Biologists",
     choice2 : "Paleontologists",
     choice3 : "Entomologist",
@@ -18,7 +18,7 @@ let questions = [{
   },
   {
     question: "What is the largest dinosaur fossil ever found?",
-    image: "images/largest.jpeg",
+    image: "./images/largest.jpeg",
     choice1 : "Argentinosaurous",
     choice2 : "Saltasaurous",
     choice3 : "Raptor",
@@ -27,7 +27,7 @@ let questions = [{
   },
   {
     question: "What is the oldest known fossil?",
-    image: "images/oldest.jpeg",
+    image: "./images/oldest.jpeg",
     choice1 : "blue-green algae that lived 3.2 billion years ago",
     choice2 : "T-Rex that lived 68 million years ago",
     choice3 : "dinosaur dung from 65 million years ago",
@@ -36,7 +36,7 @@ let questions = [{
   },
   {
     question: "Where does the word fossil come from?",
-    image: "images/old-photo.jpeg",
+    image: "./images/old-photo.jpeg",
     choice1 : 'Latin word meaning “preserved”',
     choice2 : 'Greek word meaning “ancient”',
     choice3 : 'Latin word meaning “dug up”',
@@ -91,7 +91,7 @@ let score = 0;
       return `
       <form class="answer-page">
       <h1>Correct!</h1>
-      <img src="images/right-answer.jpeg" alt="Old fossil in rock">
+      <img src="./images/right-answer.jpeg" alt="Old fossil in rock">
       <div>
           <button type= "submit">Next</button>
       </div>
@@ -106,7 +106,7 @@ let score = 0;
     return `
     <form class="answer-page">
         <h1>Not Quite</h1>
-        <img src="images/wrong-answer.jpeg" alt="T-Rex teeth close up">
+        <img src="./images/wrong-answer.jpeg" alt="T-Rex teeth close up">
         <h2>The correct answer is:</h2>
         <div class= "answer">${correctAnswerText}</div>
         <div>
