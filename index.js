@@ -48,7 +48,7 @@ let currentQuestion = 0;
 let score = 0;
 
 
-  function renderQuestion(){
+  function generateQuestion(){
       let questionNumber= currentQuestion + 1;
     return `
         <img src=${questions[currentQuestion].image}>  
@@ -58,13 +58,13 @@ let score = 0;
             <h2>${questions[currentQuestion].question}</h2>
 
             <input type="radio" id= "choice1" class="option" name="option" value= "choice1">
-            <label for="q1-choiceA">${questions[currentQuestion].choice1}</label><br>
+            <label for="choice1">${questions[currentQuestion].choice1}</label><br>
             <input type="radio" id= "choice2" class="option" name="option" value= "choice2">
-            <label for="q1-choiceB">${questions[currentQuestion].choice2}</label><br>
+            <label for="choice2">${questions[currentQuestion].choice2}</label><br>
             <input type="radio" id= "choice3" class="option" name="option" value= "choice3">
-            <label for="q1-choiceC">${questions[currentQuestion].choice3}</label><br>
+            <label for="choice3">${questions[currentQuestion].choice3}</label><br>
             <input type="radio" id= "choice4" class="option" name="option" value= "choice4">
-            <label for="q1-choiceD">${questions[currentQuestion].choice4}</label><br>
+            <label for="choice4">${questions[currentQuestion].choice4}</label><br>
           
           <div class= "button">
               <button type= "submit">Submit</button>
@@ -81,11 +81,10 @@ let score = 0;
     $( '.container' ).on( 'submit', '.opening-page', ( event ) => {
       event.preventDefault();
       
-      init();
-
+    $( '.container' ).html( generateQuestion );
       console.log("correct")
     });
-  }
+  }   
   
   function correctAnswerPage() {
       return `
@@ -118,9 +117,16 @@ let score = 0;
   };
 
   function finalPage(){
-      return `
+    let finalMessage
+    if (score >= 4) {
+      finalMessage = 'Great job! You really know your dino fossils!';
+    }  else {
+      finalMessage = 'Try again and see if you learned something new!';
+    }
+    return `
         <form class="final-page">
         <h1>Your Score:</h1>
+        <p>${finalMessage}</p>
         <h2>${score} out of 5</h2>
         <div>
             <button type= "submit">Try Again</button>
@@ -154,7 +160,7 @@ let score = 0;
             event.preventDefault();
             
             if (currentQuestion < 5) {
-                $( '.container' ).html( renderQuestion );
+                $( '.container' ).html( generateQuestion );
             } else {
                 $( '.container' ).html( finalPage );
          }
@@ -167,7 +173,7 @@ let score = 0;
         $( '.container' ).on( 'submit', '.final-page', ( event ) => {
             event.preventDefault();
             resetQuiz();
-            $( '.container' ).html( renderQuestion );
+            $( '.container' ).html( generateQuestion );
 
       });
     }
@@ -181,7 +187,7 @@ let score = 0;
     watchSubmitQuestion();
     watchNextQuestion();
     watchFinalPage();
-    $( '.container' ).html( renderQuestion );
+    
 
 
     
@@ -192,5 +198,6 @@ let score = 0;
     currentQuestion = 0;
   }
   
-  watchOpeningPage();
+  init();
+
   
